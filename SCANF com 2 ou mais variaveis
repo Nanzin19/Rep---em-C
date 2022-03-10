@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+int a,b,c;
+float media;
+    
+    printf ("Digite Tres numeros: ");
+    scanf ("%d %d %d", &a,  &b, &c);
+    
+    media = (a+b+c)/(float)3;
+    printf ("\nMedia: %.4f", media);
+
+}
