@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+
+    float a;
+    
+    printf("Digite um numero:");
+    
+    scanf("%f", &a);
+    
+    printf("\nlog: %.2f", log(a));
+    printf("\nlog2: %.2f", log2(a));
+    printf("\nlog10: %.2f", log10(a));
+
+   
+}
