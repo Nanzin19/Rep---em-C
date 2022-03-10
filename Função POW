@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+
+    float b,e;
+    
+    printf("Digite a base e expoente:");
+    
+    scanf("%f %f", &b, &e);
+    
+    printf("\nResultado: %.2f", pow(b,e));
+    
+}
