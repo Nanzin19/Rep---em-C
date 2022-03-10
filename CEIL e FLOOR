@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+
+    float a;
+    
+    printf("Digite um numero:");
+    
+    scanf("%f", &a);
+    
+    printf("\nInteiro Superior: %.0f", ceil(a));
+    printf("\nInteiro Inferior: %.0f", floor(a));
+    
+}
