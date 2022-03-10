@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+
+    const float PI= 3.141592;
+    int angG;
+    float angR;
+    printf("Digite um angulo em graus:");
+    scanf("%d", &angG);
+    angR = (PI* angG)/180;
+    
+    printf("\nSeno %d: %.2f", angG, sin (angR));
+    printf("\nCoseno %d: %.2f", angG, cos (angR));
+    printf("\nTangente %d: %.2f", angG, tan (angR));
+
+   
+}
