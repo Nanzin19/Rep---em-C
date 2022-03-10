@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+
+    int dia, mes, ano;
+    
+    printf("Digite uma data :");
+    
+    scanf("%d/%d/%d", &dia, &mes, &ano);
+    
+    printf("\nDia: %.02d", dia);
+    printf("\nMes: %.02d", mes);
+    printf("\nAno: %.04d", ano);
+    
+}
