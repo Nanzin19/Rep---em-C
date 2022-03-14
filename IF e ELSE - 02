@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+int main()
+{
+    char a;
+    printf("Digite uma letra do alfabeto apenas  ");
+    scanf("%s", &a);
+        if (isupper(a))
+        printf("A letra é maiscula");
+        else 
+        printf("A letra é minuscula");
+
+}
