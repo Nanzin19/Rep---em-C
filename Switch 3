@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+int main()
+{
+    float produto,total,totald;
+    int quantp,desconto;
+    printf("Digite quantos itens na compra do cliente:    ");
+    scanf("%d", &quantp);
+    printf("O valor do produto:    ");
+    scanf("%f", &produto);
+        total = produto * quantp;
+    printf("Digite qual o desconto do cliente / funcionario:    ");
+    scanf("%d", &desconto);
+        switch (desconto){
+        case 1:
+        printf("O total da compra sera: %f", total-(total*0.05));
+        break;
+            case 2:
+            printf("O total da compra sera: %f", total-(total*0.1));
+            break;
+                case 3:
+                printf("O total da compra sera: %f", total );
+                break;
+                    default:
+                    printf("Operacao invalida");
+        }
+
+}
