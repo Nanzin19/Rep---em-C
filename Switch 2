@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+int main()
+{
+    int a,b;
+    printf("Digite um numero inteiro:    ");
+    scanf("%d", &a);
+    printf("Digite agora a opcao desejada:    ");
+    scanf("%d", &b);
+        switch (b){
+        case 1:
+        printf("O numero é: %d", a);
+        break;
+            case 2:
+            printf("O numero será %5.2f", (float)a);
+            break;
+                 default:
+                    printf("Operacao invalida");
+        }
+
+}
