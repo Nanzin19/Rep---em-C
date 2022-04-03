@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+    int fichas,opcao,op2,vitorias,i,contador,empate,derrota,jogador;
+    srand(time(0)); //estabelecendo o fator de aleatóriedade
+    
+    printf("\nBem vindo ao jogo Punch your luck");
+    
+    printf("\nO Jogo consistem em uma luta de boxe, voce podera escolher entre ataque ou  defesa em cada rodada");
+    
+    printf("\nDigite quantas fichas você deseja inserir "); //quantidade de tentativas
+    derrota = 0;
+    empate = 0;
+    vitorias = 0;
+        scanf("%d", &fichas);
+      
+        for(i = 1; i <= fichas; i++){
+        contador = rand() % 3; //ira gerar se o oponente ataca(1) ou defende(2) ou faz nada(0)
+
+    printf("\nRound %d ",i);
+    printf("\nataque (1) ou defesa (2)? ");
+    scanf ("%d", &jogador);
+    printf("\nOponente escolheu  %d", contador);
+    if (jogador == 1 && contador == 2){
+        derrota++;
+    }else{
+    if (jogador == 2 && contador == 1){
+        vitorias++;
+    }else{
+    if (jogador == 1 && contador == 0){
+        vitorias++;
+    }else{
+    if (jogador == 1 && contador == 1){
+        empate++;
+    }else{
+    if (jogador == 2 && contador == 0){  
+        empate++;
+    }else{
+    if (jogador == 2 && contador == 2)   
+        empate++;
+}
+}
+}
+}
+}
+}
+printf("\nVitorias %d", vitorias);
+printf("\nDerrotas %d", derrota);
+printf("\nEmpates %d", empate);
+    if (empate>vitorias&&empate>derrota){
+        printf("\nEmpate");
+    }else{
+    if (vitorias>=derrota&&vitorias>=empate){
+         printf("\nVoce ganhou");
+    }else{
+    if (derrota>=vitorias&&derrota>=empate){
+        printf("\nVoce perdeu");
+    }else{
+    if (derrota==empate){
+        printf("\nVoce perdeu");
+    }else{
+    if (vitorias==empate){
+        printf("\nVoce perdeu");
+}
+}
+}
+}
+}
+printf("\nVoce gostaria de desistir, sim(1) ou nao (2)? ");
+    scanf("%d",&op2);
+        switch (op2){
+        case '1':
+        printf("\nObrigado por jogar");
+        default:
+        printf("\nRenicie o jogo");
+       
+        }
+        
+}
